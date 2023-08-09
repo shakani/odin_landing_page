@@ -108,6 +108,50 @@ ul {
 
 /* Card formattin */
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 32px;
+}
+
+.cards > .card-title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.cards > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+.cards > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards > ul > li > .card {
+    border: #3882f6;
+    border-style: solid;
+    border-radius: .25em;
+    border-width: 3px;
+    height: 100px;
+    width: 100px;
+}
+
+.cards > ul > li > .subtext {
+    height: 100px;
+    width: 100px;
+}
+
 /* Footer formatting */
 
 .footer {
