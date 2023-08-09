@@ -40,9 +40,17 @@ a, a:visited, a:hover, a:active {
 /* Content formatting */
 .content {
     background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 32px;
 }
 
-.content > .heading {
+.content > .content-text {
+    width: 500px;
+}
+
+/* .content > .heading {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bolder;
@@ -75,7 +83,7 @@ a, a:visited, a:hover, a:active {
     color: #fff;
     background-color: #0b5ed7;
     border-color: #0a58ca;
-}
+} */
 
 /* Footer formatting */
 
