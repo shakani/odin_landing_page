@@ -126,6 +126,7 @@ ul {
 
 .cards > ul {
     display: flex;
+    flex-flow: row wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -136,6 +137,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .cards > ul > li > .card {
@@ -143,13 +146,39 @@ ul {
     border-style: solid;
     border-radius: .25em;
     border-width: 3px;
-    height: 100px;
-    width: 100px;
 }
 
 .cards > ul > li > .subtext {
-    height: 100px;
-    width: 100px;
+    color: gray;
+    text-align: center;
+}
+
+.cards > ul > li > .card, .cards > ul > li > .subtext {
+    height: 150px;
+    width: 150px;
+}
+
+/* Quote formatting */
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.quote > .quote-text {
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote > .quote-attribution {
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-end;
 }
 
 /* Footer formatting */
